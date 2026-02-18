@@ -6,6 +6,8 @@ services:
     container_name: backend
     ports:
       - "8000:8000"
+    volumes:
+      - ./backend:/app
     devices:
       - "/dev/video0:/dev/video0"  # camera access for Linux/WSL2
     environment:
